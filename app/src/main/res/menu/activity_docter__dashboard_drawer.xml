@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_changepassword"
+            android:icon="@mipmap/ic_launcher"
+            android:title="ChangePassword" />
+    </group>
+
+    <item android:title="Others">
+        <menu>
+            <item
+                android:id="@+id/nav_ManageAppointments"
+                android:icon="@mipmap/ic_launcher"
+                android:title="Manage Appointments" />
+            <item
+                android:id="@+id/nav_chatDoctor"
+                android:icon="@mipmap/ic_launcher"
+                android:title="Chat" />
+            <item
+                android:id="@+id/nav_PatientReports"
+                android:icon="@mipmap/ic_launcher"
+                android:title="Patient Reports" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

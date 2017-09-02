@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="caretaker.caretaker.Register_Doctor">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="caretaker.caretaker.Login_Doctor"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_Doctor_image"
+            android:src="@drawable/doctor"
+            android:layout_above="@+id/editText_registeredemail"
+            android:layout_toLeftOf="@+id/editText_registeredemail"
+            android:layout_toStartOf="@+id/editText_registeredemail" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/editText_registeredemail"
+            android:layout_below="@+id/editText_fullname"
+            android:layout_alignLeft="@+id/editText_fullname"
+            android:layout_alignStart="@+id/editText_fullname"
+            android:hint=" Email" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/editText_password"
+            android:layout_below="@+id/editText_registeredemail"
+            android:layout_alignLeft="@+id/editText_registeredemail"
+            android:layout_alignStart="@+id/editText_registeredemail"
+            android:hint="Password"
+            android:layout_alignRight="@+id/editText_registeredemail"
+            android:layout_alignEnd="@+id/editText_registeredemail" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register as a doctor"
+            android:id="@+id/btn_registeredemail"
+            android:textAllCaps="false"
+            android:background="#00BFFF"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/radiogroup_sex"
+            android:layout_alignLeft="@+id/radiogroup_sex"
+            android:layout_alignStart="@+id/radiogroup_sex"
+            android:layout_alignRight="@+id/radiogroup_sex"
+            android:layout_alignEnd="@+id/radiogroup_sex" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:ems="10"
+            android:id="@+id/editText_fullname"
+            android:hint=" Full Name"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_Specialization"
+            android:inputType="textCapWords"
+            android:layout_below="@+id/editText_password"
+            android:hint="Speciality"
+            android:layout_alignLeft="@+id/editText_password"
+            android:layout_alignStart="@+id/editText_password"
+            android:layout_alignRight="@+id/editText_password"
+            android:layout_alignEnd="@+id/editText_password" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radiogroup_sex"
+            android:layout_below="@+id/editText_country"
+            android:layout_alignLeft="@+id/editText_country"
+            android:layout_alignStart="@+id/editText_country"
+            android:layout_alignRight="@+id/editText_country"
+            android:layout_alignEnd="@+id/editText_country">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:id="@+id/radioButton_male"
+                android:layout_gravity="center_vertical"
+                android:checked="true"
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:id="@+id/radioButton_Female"
+                android:layout_gravity="center_vertical"
+                android:checked="false" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already registered ?"
+            android:id="@+id/textView_alreadyregistered"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="52dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_country"
+            android:layout_gravity="center_horizontal"
+            android:inputType="textCapWords"
+            android:hint="Country"
+            android:layout_below="@+id/editText_Specialization"
+            android:layout_alignLeft="@+id/editText_Specialization"
+            android:layout_alignStart="@+id/editText_Specialization"
+            android:layout_alignRight="@+id/editText_Specialization"
+            android:layout_alignEnd="@+id/editText_Specialization" />
+
+    </RelativeLayout>
+</RelativeLayout>
